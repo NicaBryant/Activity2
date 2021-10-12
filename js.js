@@ -1,41 +1,43 @@
-function reg()
-	{
 
-		var name= document.getElementById("LName, FName, Extension, NumStreet, Barangay, District, Contact, Email, Nationality,Region").value;
-		var email= document.getElementById("t2").value;
-		
-		
-        //info box expression code	
-		var letters = /^[A-Za-z]+$/;
-	
 
-		if(name=='')
-		{
-			alert('Please Fill up the Form!');
-		}
-		else if(email=='')
-		{
-			alert('Please enter your user email id');
-		}
-		else
-		{				                            
-               alert('Register Success');
-			   // Redirecting to other page or webste code. 
-			   
-		}
-	}
-	//Clear
-	function clearFunc()
-	{
-		document.getElementById("LName").value="";
-		document.getElementById("FName").value="";
-		document.getElementById("Extension").value="";
-		document.getElementById("Barangay").value="";
-		document.getElementById("NumStreet").value="";
-		document.getElementById("District").value="";
-		document.getElementById("Nationality").value="";
-		document.getElementById("Email").value="";
-		document.getElementById("Contact").value="";
-		document.getElementById("Region").value="";
+  
+function getInputValue(){
+
+        var lastName = document.getElementById("last_name").value;
+        var extName = document.getElementById("ext_name").value;
+        var firstName = document.getElementById("first_name").value;
+        var middleName = document.getElementById("middle_name").value;
+        var numberStreet = document.getElementById("number_street").value;
+        var brgy = document.getElementById("barangay").value;
+        var distr = document.getElementById("district").value;
+        var cityMun = document.getElementById("city").value;
+        var provnc = document.getElementById("province").value;
+        var rgn = document.getElementById("region").value;
+        var social = document.getElementById("email").value;
+        var contNum = document.getElementById("contact").value;
+        var nation = document.getElementById("nationality").value;
+        
+        
+        
+        // checkbox dislplay //
 	
-	}
+        document.write("Last Name: " + lastName + "<br>"); 
+	   
+        document.write("Extension Name: " + extName + "<br>");
+        document.write("First Name: "  + firstName + "<br>");
+        document.write("Middle Name: " + middleName + "<br>")
+        document.write("Number/Street: " + numberStreet + "<br>")
+        document.write("Barangay:" + brgy + "<br>");
+        document.write("District:" + distr  + "<br>");
+        document.write("City/Municipality " + cityMun + "<br>");
+        document.write("Province: " + provnc + "<br>");
+        document.write("Region: "  + distr + "<br>");
+        document.write("Email: "  + social + "<br>") ;
+        document.write("Contact NO. : " + conNum +"<br>");
+        document.write("Nationality "  + nation + "<br>");
+        
+        
+        
+
+}
+    
