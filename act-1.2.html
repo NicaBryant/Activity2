@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset = "utf-8">
+
+<title>Activity2</title>
+ <script src="input.js" ></script>
+<style>
+     
+.button{
+	text-align: center;
+	background-color: transparent;  
+  color: black;  
+  padding: 16px 20px;  
+ margin-left: 5%;
+    margin-top: 25px;
+  border: 2px solid;  
+  cursor: pointer;  
+  width: 15%;  
+  opacity: 0.9;  
+  font-size: 20px;
+    border-radius: 50px;
+    border-color: #008CBA;
+
+  
+}	
+.button:hover{
+  background-color:  #008CBA;
+  color:black solid;
+
+}
+table {
+  font-family: Arial, sans-serif;
+  border:2px solid black;
+  margin-top: 20px;
+  width:75%
+
+}
+
+td
+
+		{
+		 border: 1px solid black;
+		 padding: 8px 8px 8px 15px;
+		 font-weight:bold;
+		 }
+		 
+.center {
+		 margin-left: auto;
+		 margin-right: auto;
+		 border-collapse:collapse;
+}
+
+.input[type="text"] {  
+     font-family: Arial, sans-serif;
+     border: none;
+     text-align: center;
+     width: 100%; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
+[id=cs]{
+			font-weight : normal;
+			font-size: 75%;
+			padding-top: 0px;
+			height: 1%;}
+
+<!--CheckBox Style-->
+.input[type=text]:focus, input[type=checkbox]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+
+}
+ </style>
+
+
+
+</head>
+ 
+<body class="body"> 
+<form>
+ 
+ 
+<table class ="center">
+ <tr>
+    <td colspan="10" style = "background-color: #c3c5c7;text-align: left; font-weight:bold; ">2. Learner/Manpower Profile</td>
+    
+  </tr>
+  <tr>
+  <!-- Infobox -->
+  <!--NAME -->
+      <td colspan ="2"><span style = "font-size: 75%; padding-right:20pt;">2.1 </span><span style = "font-weight: bold;"> Name:</span></td>
+      <td><input class ="input" type="text" id="LastName"></td>&nbsp;
+      <td><input class ="input" type="text" id="ExtName"></td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2"><input class ="input" type="text" id="FirstName"></td>
+    	<td></td>&nbsp;
+    	<td colspan ="2"><input class ="input" type="text" id="MidName"></td>
+      </tr>
+      <tr style = "text-weight: bold; text-align:center;">
+        <td colspan ="2">&nbsp;</td>
+    	<td colspan ="2">Last Name, Extension Name (Jr., Sr.)</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2">First Name</td>
+    	<td style = "width : 20px;">&nbsp;</td>
+    	<td colspan ="2">Middle Name</td>
+      </tr>
+  <!--Address. -->
+      <tr>
+        <td colspan ="2"><span style = "font-size: 75%; padding-right:20pt;">2.2 </span><span style = "font-weight: bold;"> Complete <span>Permanent Mailing</span></td>
+        <td colspan ="2"><input class ="input" type="text" id="NumStreet"></td>
+        <td>&nbsp;</td>
+    	<td colspan ="2"><input class ="input" type="text" id="Barangay"></td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2"><input class ="input" type="text" id="District"></td>
+      </tr>
+      <tr style = "text-weight: bold; text-align:center;">
+        <td colspan ="2">Address:</td>
+    	<td colspan ="2"> Number, Street</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2">Barangay</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2">District</td>
+      </tr>
+      <tr>
+       <td colspan ="2">&nbsp;</td>
+       <td colspan ="2"><input class ="input" type="text" id="City"></td>
+       <td>&nbsp;</td>
+       <td colspan ="2"><input class ="input" type="text" id="Province"></td>
+       <td>&nbsp;</td>
+       <td colspan ="2"><input class ="input" type="text" id="Region"></td>
+      </tr>
+      <tr style = "text-weight: bold; text-align:center;">
+        <td colspan ="2">&nbsp;</td>
+    	<td colspan ="2">City/Municipality</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2">Province</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2"> Region</td>
+      </tr>
+ <!-- Social Media -->
+        <tr>
+       <td colspan ="2"></td>
+       <td colspan ="2"><input class ="input" type="text" id="Email"></td>
+       <td>&nbsp;</td>
+       <td colspan ="2"><input class ="input" type="text" id="Contact"></td>
+       <td>&nbsp;</td>
+       <td colspan ="2"><input class ="input" type="text" id="Nationality"></td>
+      </tr>
+       <tr style = "text-weight: bold; text-align:center;">
+        <td colspan ="2">&nbsp;</td>
+    	<td colspan ="2">Email Adddress/Facebook Account</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2">Contact No</td>
+    	<td>&nbsp;</td>
+    	<td colspan ="2">Nationality</td>
+
+      </tr>
+  <!--Personal Info -->
+       <tr>
+        <td colspan="10" style = "background-color: #c3c5c7;text-align: left; font-weight:bold; ">3.Personal Information</td>
+      </tr>
+      
+       <tr>
+       	<td>&nbsp;</td>
+    	<td colspan ="3"><span style = "font-size: 80%; padding-right:20pt;"> 3.1</span> Sex</td>
+    	<td colspan ="2"><span style = "font-size: 80%; padding-right:20pt;">3.2 </span> Civil Status</td>
+    	<td colspan ="4"><span style = "font-size: 80%; padding-right:20pt;"> 3.3 </span>Employment Status (before the training)</td>
+      </tr>
+      
+       <tr>
+        	<td colspan ="2" style = "text-align:right;">&nbsp;<input type="checkbox" name="Sex" value="Male" id="Male"></td>
+    		<td colspan ="2" id="cs" style = "font-size: 120%;" >Male</td>
+    		 <td style = "text-align:right;">&nbsp;<input type="checkbox" name="Civil Status" value="Single" id="Single"></td>
+    		<td id="cs" style = "font-size: 120%;">Single</td>
+    		<td>&nbsp;</td>
+    		<td colspan ="3" id="cs" style = "font-size: 120%;"><input type="checkbox" name="Employment Status" value="Employed" id="Employed">Employed</td>
+      </tr>
+      
+       <tr>
+       <td colspan ="2"style = "text-align:right;">&nbsp;<input type="checkbox" name="Sex" value="Female" id="Female"></td>
+    		<td colspan ="2" id="cs" style = "font-size: 120%;">Female</td>
+    		<td  style = "text-align:right;"><input type="checkbox" name="Civil Status" value="Married" id="married"></</td>
+    		<td id="cs" style = "font-size: 120%;">Married</td>
+    		<td>&nbsp;</td>
+    		<td colspan ="3" id="cs"style = "font-size: 120%;"><input type="checkbox" name="EmpStatus" value="Unemployed" id="unemployed">Unemployed</td>
+      </tr>
+     
+        
+       <tr>
+        <td colspan ="2"> &nbsp; </td>
+    	<td colspan ="2">&nbsp; </td>
+     <td style = "text-align:right;">&nbsp;<input type="checkbox" name="Civil Status" value="Widower" id="Wid"></td>
+    		<td id="cs"style = "font-size: 120%;">Widower</td>
+    		<td>&nbsp;</td>
+    		 <td colspan ="3">&nbsp; </td>
+      </tr>
+      
+       <tr>
+        <td colspan ="2">&nbsp; </td>
+    	<td colspan ="2">&nbsp; </td>
+    	 <td style = "text-align:right;">&nbsp;<input type="checkbox" name="Civil Status" value="Seperated" id="separated"></td>
+    		<td id="cs" style = "font-size: 120%;">Seperated</td>
+    		<td>&nbsp;</td>
+    		 <td colspan ="3">&nbsp; </td>
+      </tr>
+      
+       <tr>
+        <td colspan ="2">&nbsp; </td>
+    	<td colspan ="2">&nbsp; </td>
+    		 <td style = "text-align:right;">&nbsp;<input type="checkbox" name="Civil Status" value="Solo Parent" id="solo_parent"></td>
+    		<td id="cs" style = "font-size: 120%;">Solo Parent</td>
+    		<td>&nbsp;</td>
+    		 <td colspan ="3">&nbsp; </td>
+      </tr>
+      
+       <tr>
+        <td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	
+    	<td>&nbsp; </td>
+      </tr>
+      
+       <tr>
+        <td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+    	<td>&nbsp; </td>
+      </tr>
+  <!-- bIRTHDAY-->
+       <tr>
+        <td colspan ="2">3.4 Birthdate</td>
+    	<td colspan ="2"><input class ="input" type="text" id="Month"> </td>
+        <td colspan ="2"><input class ="input" type="text" id="Day"> </td>
+        <td colspan ="2"><input class ="input" type="text" id="Year"> </td>
+        <td colspan ="2"><input class ="input" type="text" id="Age"> </td>
+      </tr>
+      
+       <tr>
+       	<td colspan ="2">&nbsp; </td>
+        <td colspan ="2">Month of Birth</td>
+        <td colspan ="2">&nbsp; &nbsp;
+    	&nbsp;
+    	&nbsp;
+    	&nbsp;
+    	&nbsp;
+    	&nbsp;
+    	&nbsp;
+    	Day of Birth</td>
+        <td colspan ="2">Year of Birth</td>
+    	<td colspan ="2">Age </td>
+      </tr>
+      
+       <tr>
+        <td colspan ="2">&nbsp; </td>
+    	<td colspan ="2">&nbsp; </td>
+    	
+      </tr>
+  <!--Birthplace-->
+       <tr>
+        <td colspan ="2">3.5 Birthplace</td>
+        <td colspan ="2"><input class ="input" type="text" id="Municipality"> </td>
+    	<td>&nbsp; </td>
+    	<td colspan ="2"><input class ="input" type="text" id="Place"> </td>
+    	<td>&nbsp; </td>
+    	<td colspan ="2"><input class ="input" type="text" id="Reg"> </td>
+      </tr>
+      
+       <tr>
+        <td colspan ="2">&nbsp; </td>
+    	<td colspan ="2">City/Municipality</td>
+    	<td>&nbsp; </td>
+    	<td colspan ="2">Province </td>
+    	<td>&nbsp; </td>
+        <td colspan ="2">Region</td>
+      </tr>
+  <!--3.6-->
+       <tr>
+        <td>&nbsp; </td>
+        <td colspan ="9">3.6 Educaional Attainment Before the Training (Trainee)<input class ="input" type="text" id="Train"></td>
+      </tr>
+      
+
+    </table>  
+    </form> 
+  <center>  <button class="button" id="submit" type="submit" onclick="getInputValue();"><strong>Submit</strong></button>
+    <button class="button" id="reset" type="reset" onclick="getInputClear();" ><strong>Clear</strong></button> </center>
+
+
+</body>
+
+
+</html>
