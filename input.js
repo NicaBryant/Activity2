@@ -100,14 +100,6 @@ function getInputClear()
 	document.getElementById("Place").value="";
 	document.getElementById("Reg").value="";
 	document.getElementById("Train").value="";
-	document.getElementById("Male").checked = false;
-	document.getElementById("Female").checked = false;
-	document.getElementById("Single").checked = false;
-	document.getElementById("Married").checked = false;
-	document.getElementById("Wid").checked = false;
-	document.getElementById("Sep").checked = false;
-	document.getElementById("Solo").checked = false;
-	document.getElementById("Employed").checked = false;
-	document.getElementById("Unemployed").checked = false;
+	
 
 }
